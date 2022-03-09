@@ -12,12 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EcommerceMobileApp">
         <activity
-            android:name=".ProductDetailsActivity"
+            android:name=".ui.FeedbackActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".ui.MainActivity"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.ProductDetailsActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

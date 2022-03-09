@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/projects/EcommerceMobileApp/app/src/main/res/drawable/custom_edt.xml" value="0.23489583333333333" />
         <entry key="..\:/projects/EcommerceMobileApp/app/src/main/res/drawable/discount_bg.xml" value="0.16574074074074074" />
+        <entry key="..\:/projects/EcommerceMobileApp/app/src/main/res/drawable/edt_back.xml" value="0.23489583333333333" />
+        <entry key="..\:/projects/EcommerceMobileApp/app/src/main/res/layout/activity_feedback.xml" value="0.22" />
         <entry key="..\:/projects/EcommerceMobileApp/app/src/main/res/layout/activity_main.xml" value="0.21875" />
         <entry key="..\:/projects/EcommerceMobileApp/app/src/main/res/layout/activity_product_details.xml" value="0.25" />
         <entry key="..\:/projects/EcommerceMobileApp/app/src/main/res/layout/item_product.xml" value="0.25" />
+        <entry key="..\:/projects/EcommerceMobileApp/app/src/main/res/menu/menu.xml" value="0.2046875" />
       </map>
     </option>
   </component>

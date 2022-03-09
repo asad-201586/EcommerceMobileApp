@@ -1,14 +1,19 @@
-package com.app.ecommercemobileapp;
+package com.app.ecommercemobileapp.ui;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Toast;
 
+import com.app.ecommercemobileapp.Common;
+import com.app.ecommercemobileapp.R;
 import com.app.ecommercemobileapp.adapter.ProductAdapter;
 import com.app.ecommercemobileapp.databinding.ActivityMainBinding;
 import com.app.ecommercemobileapp.model.ProductModel;
@@ -70,5 +75,28 @@ public class MainActivity extends AppCompatActivity implements ProductAdapter.On
         intent.putExtra("item",new Gson().toJson(item));
         startActivity(intent);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if (item.getItemId() == R.id.menu_feedback) {
+            //Common.toast(this,"Feedback");
+            startActivity(new Intent(this,FeedbackActivity.class));
+        }
+
+        if (item.getItemId() == R.id.menu_about_us) {
+            Common.toast(this,"About us");
+        }
+
+
+        return super.onOptionsItemSelected(item);
     }
 }

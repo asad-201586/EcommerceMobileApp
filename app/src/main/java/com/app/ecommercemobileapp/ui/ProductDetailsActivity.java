@@ -1,4 +1,4 @@
-package com.app.ecommercemobileapp;
+package com.app.ecommercemobileapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 
+import com.app.ecommercemobileapp.R;
 import com.app.ecommercemobileapp.databinding.ActivityProductDetailsBinding;
 import com.app.ecommercemobileapp.model.ProductModel;
 import com.google.gson.Gson;
